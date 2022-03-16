@@ -1,8 +1,28 @@
 h1{
-  font-weight: bold;
   font-family: sans-serif;
 }
 
 img{
-  position: relative;
+  display: inline-block;
+  vertical-align: middle;
 }
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.container h2{
+  font-weight: bold; ;
+}
+
+.container img {
+  width: 100px;
+  height: 100px;
+  margin-top: 5px;
+}
+
+

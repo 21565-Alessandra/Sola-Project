@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="warning">
+  <ion-toolbar color="sola-yellow">
     <ion-title>
       Profile
     </ion-title>
@@ -12,5 +12,31 @@
       <ion-title size="large">Profile</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <div class="container">
+
+    <h2>Alex Hayes</h2>
+    <img src="../assets/IconPicture.svg">
+    <p>“The journey is my home”</p>
+    <p> Muriel Rukeyser </p>
+
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="dark">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="start">
+      <ion-fab-button>
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="help-buoy"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="search"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
 
 </ion-content>
