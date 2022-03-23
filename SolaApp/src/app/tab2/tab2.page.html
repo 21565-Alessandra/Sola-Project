@@ -6,16 +6,16 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" color="light">
+<ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
+    <ion-toolbar color="sola-yellow">
       <ion-title size="large">Profile</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div class="container">
 
-    <h2>Alex Hayes</h2>
+    <h1>Alex Hayes</h1>
     <p>“The journey is my home”</p>
     <p> Muriel Rukeyser </p>
     <img src="../assets/IconPicture.svg">
@@ -26,13 +26,15 @@
 
   <ion-list>
     <ion-item color="sola-pink">
-      <ion-label>Interests</ion-label>
+      <ion-label >
+        Interests
+      </ion-label>
       <div>
-        <br>
-      <ion-icon name="bicycle-outline"></ion-icon>
-      <ion-icon name="beer-outline"></ion-icon>
-      <ion-icon name="musical-note-outline"></ion-icon>
-    </div>
+        <ion-icon name="bicycle-outline" slot="start"> </ion-icon>
+        <ion-icon name="beer-outline"> </ion-icon>
+        <ion-icon name="musical-note-outline"> </ion-icon>
+      </div>
+
     </ion-item>
   </ion-list>
 
@@ -60,10 +62,10 @@
 
   <!-- -------------------------------------------- -->
 
-  <!-- **** Plus Button to Access More Options **** -->
+  <!-- Plus Button to Access More Options / List on the left -->
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button color="sola-pink">
+    <ion-fab-button size="small" color="sola-pink">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
     <ion-fab-list side="start">

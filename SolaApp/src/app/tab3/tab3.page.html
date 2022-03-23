@@ -1,16 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar  color="sola-yellow">
     <ion-title>
-      Saved
+      Location
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true"  color ="light">
+<ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Saved</ion-title>
+    <ion-toolbar color="sola-yellow">
+      <ion-title size="large">Location</ion-title>
     </ion-toolbar>
   </ion-header>
-
 </ion-content>
+
+
+
+
+<!-- Plus Button to Access More Options / List on the left -->
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button size="small" color="sola-pink">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="start">
+    <ion-fab-button color="sola-pink">
+      <ion-icon name="settings-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color="sola-pink">
+      <ion-icon name="help-buoy"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color="sola-pink">
+      <ion-icon name="search"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+
+<!-- -------------------------------------------- -->

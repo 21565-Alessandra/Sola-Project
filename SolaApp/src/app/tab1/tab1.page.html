@@ -9,8 +9,8 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
+  <ion-header collapse="condense" color="sola-yellow">
+    <ion-toolbar color="sola-yellow">
       <ion-title size="large">Home</ion-title>
 
       <!-- <ion-button color="light" slot="end">
@@ -32,35 +32,47 @@
 
   <!-- ***************** HOME PAGE GRID ***************** -->
 
+  <!-- Round -->
+
+
+
   <ion-card>
 
     <ion-grid>
-      <ion-row class="ion-text-center">
+      <ion-row class="ion-text-center" lines="full">
         <ion-col size="6" routerLink="/page1">
-          <ion-icon name="send" color="sola-blue" size="large"></ion-icon>
+          <ion-button color="sola-blue">
+            <ion-icon size="large" name="walk-outline" color="sola-dark-grey" ></ion-icon>
+          </ion-button>
           <p>Comming</p>
         </ion-col>
 
         <ion-col size="6" routerLink="/page2">
-          <ion-icon name="flag" color="sola-yellow" size="large"></ion-icon>
+          <ion-button color="sola-yellow" >
+            <ion-icon size="large" name="flag-outline" color="sola-dark-grey" ></ion-icon>
+          </ion-button>
           <p>My Territory</p>
         </ion-col>
       </ion-row>
     </ion-grid>
 
-  <!-- </ion-card>
+    <!-- </ion-card>
   <ion-card> -->
 
     <ion-grid>
       <ion-row class="ion-text-center">
         <ion-col size="6" routerLink="/page1">
-          <ion-icon name="help-buoy" color="sola-pink" size="large"></ion-icon>
-          <p>S.O.S.</p>
+          <ion-button color="sola-pink" >
+            <ion-icon size="large" name="paper-plane-outline" color="sola-dark-grey" ></ion-icon>
+          </ion-button>
+          <p>Going</p>
         </ion-col>
 
         <ion-col size="6" routerLink="/page2">
-          <ion-icon name="paper-plane" color="sola-purple" size="large"></ion-icon>
-          <p>Going</p>
+          <ion-button color="sola-purple" >
+            <ion-icon size="large" name="help-buoy-outline" color="sola-dark-grey"></ion-icon>
+          </ion-button>
+          <p>S.O.S</p>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -77,7 +89,7 @@
 <!-- Plus Button to Access More Options / List on the left -->
 
 <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-  <ion-fab-button color="sola-pink">
+  <ion-fab-button size="small" color="sola-pink">
     <ion-icon name="add"></ion-icon>
   </ion-fab-button>
   <ion-fab-list side="start">

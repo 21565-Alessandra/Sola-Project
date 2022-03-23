@@ -1,7 +1,19 @@
 h1{
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
+}
 
+h2{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+p{
+  font-size: 0.8rem;
+}
+
+p + p {
+ color: #565353;
 }
 
 img{
@@ -36,4 +48,9 @@ img{
 .ion-label{
   margin-top: 2px;
   margin-bottom: 2 px;
+}
+
+ion-icon {
+  font-size: 20px;
+  margin: 5px;
 }
