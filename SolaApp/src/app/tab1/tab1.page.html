@@ -1,4 +1,4 @@
-//App bar of the app (tabs)
+// App bar of the app (tabs)
 
 <ion-header [translucent]="true">
   <ion-toolbar color="sola-yellow">
@@ -12,10 +12,15 @@
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Home</ion-title>
-    </ion-toolbar>
 
+      <!-- <ion-button color="light" slot="end">
+        <ion-icon slot="icon-only" ios="ellipsis-vertical" md="ellipsis-vertical"></ion-icon>
+      </ion-button> -->
+
+    </ion-toolbar>
   </ion-header>
 
+  <!-- **************** USER NAME + PIC **************** -->
   <div class="container">
 
     <h2>Alex Hayes</h2>
@@ -23,34 +28,72 @@
 
   </div>
 
+  <!-- -------------------------------------------------- -->
+
+  <!-- ***************** HOME PAGE GRID ***************** -->
+
+  <ion-card>
+
+    <ion-grid>
+      <ion-row class="ion-text-center">
+        <ion-col size="6" routerLink="/page1">
+          <ion-icon name="send" color="sola-blue" size="large"></ion-icon>
+          <p>Comming</p>
+        </ion-col>
+
+        <ion-col size="6" routerLink="/page2">
+          <ion-icon name="flag" color="sola-yellow" size="large"></ion-icon>
+          <p>My Territory</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  <!-- </ion-card>
+  <ion-card> -->
+
+    <ion-grid>
+      <ion-row class="ion-text-center">
+        <ion-col size="6" routerLink="/page1">
+          <ion-icon name="help-buoy" color="sola-pink" size="large"></ion-icon>
+          <p>S.O.S.</p>
+        </ion-col>
+
+        <ion-col size="6" routerLink="/page2">
+          <ion-icon name="paper-plane" color="sola-purple" size="large"></ion-icon>
+          <p>Going</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+
 </ion-content>
 
 
-<!-- search icon - fab placed to the top and end and on the top edge of the content overlapping header
-  <ion-fab vertical="top" horizontal="end" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="search"></ion-icon>
-    </ion-fab-button>
-  </ion-fab> -->
 
-<!-- fab placed to the bottom and start and on the bottom edge of the content overlapping footer with a list to the right -->
+<!-- -------------------------------------------------- -->
+
+
+<!-- Plus Button to Access More Options / List on the left -->
+
 <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-  <ion-fab-button color="dark">
+  <ion-fab-button color="sola-pink">
     <ion-icon name="add"></ion-icon>
   </ion-fab-button>
   <ion-fab-list side="start">
-    <ion-fab-button>
+    <ion-fab-button color="sola-pink">
       <ion-icon name="settings-outline"></ion-icon>
     </ion-fab-button>
-    <ion-fab-button>
+    <ion-fab-button color="sola-pink">
       <ion-icon name="help-buoy"></ion-icon>
     </ion-fab-button>
-    <ion-fab-button>
+    <ion-fab-button color="sola-pink">
       <ion-icon name="search"></ion-icon>
     </ion-fab-button>
   </ion-fab-list>
 </ion-fab>
 
+<!-- -------------------------------------------------- -->
 
 
 <!-- <ion-searchbar placeholder="Search" animated></ion-searchbar> -->
