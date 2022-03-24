@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true" color="sola-yellow">
+  <div>
+    <img name="img2" slot="border_left" src="assets/sola-name.svg" alt="Logo" height="80px">
+
+
+    <ion-text>
+      <h1>login</h1>
+    </ion-text>
+
+    <ion-item color="sola-yellow">
+      <ion-label position="floating">EMAIL</ion-label>
+      <ion-input  type="email" [(ngModel)]="email"> </ion-input>
+    </ion-item>
+
+    <ion-item color="sola-yellow">
+      <ion-input color="black" placeholder="PASSWORD" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="login()" color="sola-blue">
+      <ion-icon name="caret-forward-outline"></ion-icon>
+     <p>EMBARK</p>
+
+    </ion-button>
+
+    <ion-button color="sola-pink">
+      <ion-icon name="logo-google"></ion-icon>
+      <p>EMBARK WITH GOOGLE</p>
+    </ion-button>
+
+  </div>
+
+
+</ion-content>
+
+
+
+
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content> -->
