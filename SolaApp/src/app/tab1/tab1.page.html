@@ -14,13 +14,13 @@
 <ion-content [fullscreen]="true">
 
   <!-- ******************* SEARCH BAR ******************* -->
-  <ion-searchbar placeholder="Search" animated size="large"></ion-searchbar>
+  <ion-searchbar placeholder="Search" animated="true"></ion-searchbar>
   <!-- -------------------------------------------------- -->
 
   <!-- **************** USER NAME + PIC **************** -->
   <div class="container">
 
-    <h2>Alex Hayes</h2>
+    <h2 style="color:#565353">Alex Hayes</h2>
     <img src="../assets/IconPicture.svg" style="width:130px;height:130px;">
 
   </div>
@@ -31,50 +31,41 @@
 
   <!-- Round -->
 
+  <ion-grid>
+    <ion-row class="ion-text-center" lines="full">
+      <ion-col size="6" routerLink="/page1">
+        <ion-button color="sola-blue">
+          <ion-icon size="large" name="walk-outline" color="sola-dark-grey"></ion-icon>
+        </ion-button>
+        <p>Comming</p>
+      </ion-col>
 
+      <ion-col size="6" routerLink="/page2">
+        <ion-button color="sola-pink">
+          <ion-icon size="large" name="flag-outline" color="sola-dark-grey"></ion-icon>
+        </ion-button>
+        <p>My Territory</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <ion-card>
+  <ion-grid>
+    <ion-row class="ion-text-center">
+      <ion-col size="6" routerLink="/page1">
+        <ion-button color="sola-yellow">
+          <ion-icon size="large" name="paper-plane-outline" color="sola-dark-grey"></ion-icon>
+        </ion-button>
+        <p>Going</p>
+      </ion-col>
 
-    <ion-grid>
-      <ion-row class="ion-text-center" lines="full">
-        <ion-col size="6" routerLink="/page1">
-          <ion-button color="sola-blue">
-            <ion-icon size="large" name="walk-outline" color="sola-dark-grey"></ion-icon>
-          </ion-button>
-          <p>Comming</p>
-        </ion-col>
-
-        <ion-col size="6" routerLink="/page2">
-          <ion-button color="sola-yellow">
-            <ion-icon size="large" name="flag-outline" color="sola-dark-grey"></ion-icon>
-          </ion-button>
-          <p>My Territory</p>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-
-    <!-- </ion-card>
-  <ion-card> -->
-
-    <ion-grid>
-      <ion-row class="ion-text-center">
-        <ion-col size="6" routerLink="/page1">
-          <ion-button color="sola-pink">
-            <ion-icon size="large" name="paper-plane-outline" color="sola-dark-grey"></ion-icon>
-          </ion-button>
-          <p>Going</p>
-        </ion-col>
-
-        <ion-col size="6" routerLink="/page2">
-          <ion-button color="sola-purple">
-            <ion-icon size="large" name="help-buoy-outline" color="sola-dark-grey"></ion-icon>
-          </ion-button>
-          <p>S.O.S</p>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-
-  </ion-card>
+      <ion-col size="6" routerLink="/page2">
+        <ion-button color="sola-purple">
+          <ion-icon size="large" name="help-buoy-outline" color="sola-dark-grey"></ion-icon>
+        </ion-button>
+        <p>S.O.S</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
 

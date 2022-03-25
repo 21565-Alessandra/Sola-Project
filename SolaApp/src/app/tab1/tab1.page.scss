@@ -5,7 +5,14 @@ h1{
 img{
   display: inline-block;
   vertical-align: middle;
+  margin-bottom: 15px;
 }
+
+ion-grid{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 
 .container{
   display: flex;
@@ -33,6 +40,4 @@ ion-button {
 
 ion-title {
   font-style: normal;
-
-
 }

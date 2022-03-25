@@ -9,7 +9,7 @@ h2{
 }
 
 p{
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 p + p {
@@ -19,6 +19,8 @@ p + p {
 img{
   display: inline-block;
   vertical-align: middle;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .container{
