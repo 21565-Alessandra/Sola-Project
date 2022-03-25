@@ -35,7 +35,7 @@ export class Tab3Page {
     const options = {
       center: position,
       zoom: 1,
-      disableDefaultUI: true,
+      disableDefaultUI: false,
     };
 
     this.map = new google.maps.Map(this.mapRef.nativeElement, options);
