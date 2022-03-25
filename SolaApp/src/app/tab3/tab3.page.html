@@ -4,6 +4,9 @@
       {{tittle}}
     </ion-title>
   </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar placeholder="Search" (ionChange)="searchAddress($event)"></ion-searchbar>
+  </ion-toolbar>
 </ion-header>
 
 <!-- <ion-content [fullscreen]="true">
