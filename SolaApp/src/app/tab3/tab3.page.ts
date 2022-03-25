@@ -91,7 +91,21 @@ export class Tab3Page {
   }
 
   public traceRoute(place: google.maps.places.AutocompletePrediction){
-    console.log(place);
+    this.addressList = [];
+
+    new google.maps.Geocoder().geocode({address: place.description}, result => {
+      console.log(result);
+      this.map.setCenter(result[0].geometry.location);
+      this.map.setZoom(19);
+
+      const marker = new google.maps.Marker({
+        position: result[0].geometry.location,
+        title: result[0].formatted_address,
+        animation: google.maps.Animation.DROP,
+        map: this.map
+      });
+
+    });
   }
 
 }
