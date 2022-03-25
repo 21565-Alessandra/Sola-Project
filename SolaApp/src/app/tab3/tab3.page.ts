@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, NgZone, ViewChild } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 
@@ -13,11 +13,13 @@ export class Tab3Page {
   map: google.maps.Map;
   myPosition: google.maps.LatLng;
 
+  addressList: any = [];
+
   private autoComplete = new google.maps.places.AutocompleteService();
 
   @ViewChild('map', { read: ElementRef, static: false }) mapRef: ElementRef;
 
-  constructor(private geolocation: Geolocation) {}
+  constructor(private geolocation: Geolocation, private ngZone: NgZone) {}
 
   ionViewWillEnter() {
     this.showMap();
@@ -73,12 +75,23 @@ export class Tab3Page {
   searchAddress(eventFieldSearch: any) {
     const search = eventFieldSearch.target.value as string;
 
-    if (!search.trim().length) { return false; }
+    if (!search.trim().length) { this.addressList = []; return false; }
 
     this.autoComplete.getPlacePredictions({input: search}, (arrayPlaces, status) => {
 
-      console.log(arrayPlaces);
+      if(status == 'OK'){
+        this.ngZone.run(()=>{
+          this.addressList = arrayPlaces;
+        });
+      } else {
+        this.addressList = [];
+      }
 
     });
   }
+
+  public traceRoute(place: google.maps.places.AutocompletePrediction){
+    console.log(place);
+  }
+
 }

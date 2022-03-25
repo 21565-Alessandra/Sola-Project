@@ -18,6 +18,12 @@
 </ion-content> -->
 
 <ion-content [fullscreen]="true">
+  <ion-list [hidden]="!addressList.length">
+    <ion-item button *ngFor="let place of addressList" lines="full" (click)="traceRoute(place)">
+      {{place.description}}
+    </ion-item>
+
+  </ion-list>
   <div #map id="map"></div>
 </ion-content>
 
