@@ -20,10 +20,10 @@ export class LoginPage implements OnInit {
   login(){
     if(this.email === 'admin@admin.com' && this.password === 'admin'){
       this.route.navigateByUrl('/tabs/tab1');
-      this.presentToast('Welcome!', 'success');
+      this.presentToast('Welcome!', 'sola-blue');
     }
     else{
-      this.presentToast('ERR, user or password invalid', 'danger');
+      this.presentToast('ERR, user or password invalid', 'sola-pink');
     }
   }
 

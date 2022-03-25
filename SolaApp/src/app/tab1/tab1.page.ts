@@ -8,7 +8,7 @@ import { AlertController } from '@ionic/angular'; // for alerts
 })
 export class Tab1Page {
 
-  tittle: string = "Home";
+  title: string = "Home";
 
   constructor() {}
 

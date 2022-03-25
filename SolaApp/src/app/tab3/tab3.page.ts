@@ -16,6 +16,8 @@ export class Tab3Page {
   addressList: any = [];
 
   private autoComplete = new google.maps.places.AutocompleteService();
+  private direction = new google.maps.DirectionsService();
+  private directionsRender = new google.maps.DirectionsRenderer();
 
   @ViewChild('map', { read: ElementRef, static: false }) mapRef: ElementRef;
 
@@ -95,14 +97,32 @@ export class Tab3Page {
 
     new google.maps.Geocoder().geocode({address: place.description}, result => {
       console.log(result);
-      this.map.setCenter(result[0].geometry.location);
-      this.map.setZoom(19);
+      // this.map.setCenter(result[0].geometry.location);
+      // this.map.setZoom(19);
 
       const marker = new google.maps.Marker({
         position: result[0].geometry.location,
         title: result[0].formatted_address,
         animation: google.maps.Animation.DROP,
         map: this.map
+      });
+
+      const mapRoute: google.maps.DirectionsRequest = {
+        origin: this.myPosition,
+        destination: result[0].geometry.location,
+        unitSystem: google.maps.UnitSystem.METRIC,
+        travelMode: google.maps.TravelMode.WALKING
+      };
+
+      this.direction.route(mapRoute, (directionResult, status) => {
+
+        if(status == 'OK') {
+          this.directionsRender.setMap(this.map);
+          this.directionsRender.setDirections(directionResult);
+          this.directionsRender.setOptions({suppressMarkers: true})
+          console.log(directionResult);
+        }
+
       });
 
     });
