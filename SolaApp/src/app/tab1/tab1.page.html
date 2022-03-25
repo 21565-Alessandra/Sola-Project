@@ -1,7 +1,10 @@
-// App bar of the app (tabs)
+<!-- App top bar -->
 
 <ion-header [translucent]="true">
   <ion-toolbar color="sola-yellow">
+    <ion-buttons slot="end">
+      <ion-menu-button > </ion-menu-button>
+    </ion-buttons>
     <ion-title>
       {{title}}
     </ion-title>
@@ -9,22 +12,16 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense" color="sola-yellow">
-    <ion-toolbar color="sola-yellow">
-      <ion-title size="default" >{{title}}</ion-title>
 
-      <!-- <ion-button color="light" slot="end">
-        <ion-icon slot="icon-only" ios="ellipsis-vertical" md="ellipsis-vertical"></ion-icon>
-      </ion-button> -->
-
-    </ion-toolbar>
-  </ion-header>
+  <!-- ******************* SEARCH BAR ******************* -->
+  <ion-searchbar placeholder="Search" animated size="large"></ion-searchbar>
+  <!-- -------------------------------------------------- -->
 
   <!-- **************** USER NAME + PIC **************** -->
   <div class="container">
 
     <h2>Alex Hayes</h2>
-    <img src="../assets/IconPicture.svg">
+    <img src="../assets/IconPicture.svg" style="width:130px;height:130px;">
 
   </div>
 
@@ -42,14 +39,14 @@
       <ion-row class="ion-text-center" lines="full">
         <ion-col size="6" routerLink="/page1">
           <ion-button color="sola-blue">
-            <ion-icon size="large" name="walk-outline" color="sola-dark-grey" ></ion-icon>
+            <ion-icon size="large" name="walk-outline" color="sola-dark-grey"></ion-icon>
           </ion-button>
           <p>Comming</p>
         </ion-col>
 
         <ion-col size="6" routerLink="/page2">
-          <ion-button color="sola-yellow" >
-            <ion-icon size="large" name="flag-outline" color="sola-dark-grey" ></ion-icon>
+          <ion-button color="sola-yellow">
+            <ion-icon size="large" name="flag-outline" color="sola-dark-grey"></ion-icon>
           </ion-button>
           <p>My Territory</p>
         </ion-col>
@@ -62,14 +59,14 @@
     <ion-grid>
       <ion-row class="ion-text-center">
         <ion-col size="6" routerLink="/page1">
-          <ion-button color="sola-pink" >
-            <ion-icon size="large" name="paper-plane-outline" color="sola-dark-grey" ></ion-icon>
+          <ion-button color="sola-pink">
+            <ion-icon size="large" name="paper-plane-outline" color="sola-dark-grey"></ion-icon>
           </ion-button>
           <p>Going</p>
         </ion-col>
 
         <ion-col size="6" routerLink="/page2">
-          <ion-button color="sola-purple" >
+          <ion-button color="sola-purple">
             <ion-icon size="large" name="help-buoy-outline" color="sola-dark-grey"></ion-icon>
           </ion-button>
           <p>S.O.S</p>

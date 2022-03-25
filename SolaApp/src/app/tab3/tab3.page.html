@@ -1,21 +1,13 @@
 <ion-header [translucent]="true">
-  <ion-toolbar  color="sola-yellow">
+  <ion-toolbar color="sola-yellow">
+    <ion-buttons slot="end">
+      <ion-menu-button > </ion-menu-button>
+    </ion-buttons>
     <ion-title>
-      {{tittle}}
+      {{title}}
     </ion-title>
   </ion-toolbar>
-  <ion-toolbar>
-    <ion-searchbar placeholder="Search" (ionChange)="searchAddress($event)"></ion-searchbar>
-  </ion-toolbar>
 </ion-header>
-
-<!-- <ion-content [fullscreen]="true">
-  <ion-header  collapse="condense">
-    <ion-toolbar color="sola-yellow">
-      <ion-title size="default" slot="start">{{tittle}}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content> -->
 
 <ion-content [fullscreen]="true">
   <ion-list [hidden]="!addressList.length">

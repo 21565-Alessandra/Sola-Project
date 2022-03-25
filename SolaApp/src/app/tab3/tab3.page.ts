@@ -8,7 +8,7 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
   styleUrls: ['tab3.page.scss'],
 })
 export class Tab3Page {
-  tittle: string = 'Location';
+  title: string = 'Location';
 
   map: google.maps.Map;
   myPosition: google.maps.LatLng;
