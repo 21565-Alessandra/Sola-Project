@@ -1,0 +1,38 @@
+<ion-header class="ion-no-border" mode="ios">
+  <ion-toolbar >
+    <ion-buttons slot="end">
+      <ion-menu-button > </ion-menu-button>
+    </ion-buttons>
+    <ion-title>Chat</ion-title>
+    <ion-icon name="camera-outline" slot="start" size="large"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="tabs ion-padding">
+  <ion-segment value="chats" (ionChange)="segmentChange($event)">
+    <ion-segment-button value="chats">
+      <ion-label>Chats</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="status">
+      <ion-label>Status</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="saved">
+      <ion-label>Saved</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div class="chat-list" *ngIf="activeTab == 'chats'">
+  <div class="recent-chats ion-padding">
+    <div class="heading">
+      <h1>Recent Chats</h1>
+      <ion-icon name="search-sharp"> </ion-icon>
+
+    </div>
+
+  </div>
+
+</div>
+
+</ion-content>
