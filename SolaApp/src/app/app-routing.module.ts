@@ -18,8 +18,6 @@ const routes: Routes = [
   {path: 'tab2', component: Tab2Page},
   {path: 'tab3', component: Tab3Page},
 
-
-
   {
     path: '',
     redirectTo: 'login',
