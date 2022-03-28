@@ -3,7 +3,7 @@
 <ion-header [translucent]="true" mode="ios">
   <ion-toolbar color="sola-yellow">
     <ion-buttons slot="end">
-      <ion-menu-button > </ion-menu-button>
+      <ion-menu-button> </ion-menu-button>
     </ion-buttons>
     <ion-title>
       {{title}}
@@ -29,48 +29,28 @@
 
   <!-- ***************** HOME PAGE GRID ***************** -->
 
-  <!-- Round -->
 
-  <ion-grid>
-    <ion-row class="ion-text-center" lines="full">
-      <ion-col size="6" routerLink="/page1">
-        <ion-button color="sola-blue">
-          <ion-icon size="large" name="walk-outline" color="sola-dark-grey"></ion-icon>
-        </ion-button>
-        <p>Comming</p>
-      </ion-col>
+  <div class="grid-one">
+    <div class="item-one">
+        <ion-icon name="subway"></ion-icon>
+        <ion-label>coming</ion-label>
+    </div>
+    <div class="item-two">
+      <ion-icon name="flag"> </ion-icon>
+      <ion-label>my territory</ion-label>
+    </div>
+  </div>
 
-      <ion-col size="6" routerLink="/page2">
-        <ion-button color="sola-pink">
-          <ion-icon size="large" name="flag-outline" color="sola-dark-grey"></ion-icon>
-        </ion-button>
-        <p>My Territory</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <ion-grid>
-    <ion-row class="ion-text-center">
-      <ion-col size="6" routerLink="/page1">
-        <ion-button color="sola-yellow">
-          <ion-icon size="large" name="paper-plane-outline" color="sola-dark-grey"></ion-icon>
-        </ion-button>
-        <p>Going</p>
-      </ion-col>
-
-      <ion-col size="6" routerLink="/page2">
-        <ion-button color="sola-purple">
-          <ion-icon size="large" name="help-buoy-outline" color="sola-dark-grey"></ion-icon>
-        </ion-button>
-        <p>S.O.S</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-</ion-content>
-
-<!-- -------------------------------------------------- -->
-
+  <div class="grid-two">
+    <div class="item-three">
+      <ion-label>going</ion-label>
+      <ion-icon name="paper-plane"> </ion-icon>
+    </div>
+    <div class="item-four">
+      <ion-label>s.o.s</ion-label>
+      <ion-icon name="help-buoy"> </ion-icon>
+    </div>
+  </div>
 
 <!-- Plus Button to Access More Options / List on the left -->
 
