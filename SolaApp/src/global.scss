@@ -31,3 +31,12 @@
 // }
 
 // *{font-family: 'Josefin Sans', sans-serif;}
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+  bottom: 50px;
+}
+
+.swiper-pagination-bullet{
+  width: 10px;
+  height: 10px;
+}

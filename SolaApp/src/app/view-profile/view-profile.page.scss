@@ -1,0 +1,140 @@
+ion-content {
+  position: relative;
+}
+
+.image-slider {
+  position: relative;
+
+  .arrow-left {
+    position: absolute;
+    z-index: 2;
+    margin: 20px;
+    background: #FFBD97;
+    padding: 3px 9px;
+    font-size: 1.7rem;
+    border-radius: 11px;
+  }
+
+  ion-slides {
+    --bullet-background-active: #FFBD97;
+    height: 50vh;
+    width: 100%;
+
+    img {
+      width: 100vw;
+      max-width: 100vw;
+      object-fit: cover;
+    }
+  }
+}
+
+.profile-info {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #FFFFFF;
+  margin-top: -30px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+
+  .user-info {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .basic-info {
+      display: flex;
+      flex-direction: column;
+
+      h1,p {
+        margin: 0 0 5px 0;
+      }
+
+      h3{
+        color: #565353;
+      }
+
+      p {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #565353;
+      }
+    }
+
+    .share-icon {
+      background: #FFBD97;
+      padding: 10px;
+      color: #000;
+      border-radius: 11px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  .about-me {
+    padding: 0 20px;
+
+    h5,
+    p {
+      margin: 0 0 5px 0;
+    }
+
+    h5 {
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #565353;
+      font-size: 18px;
+
+      .more-less {
+        color: #000;
+
+      }
+    }
+  }
+
+  .my-hobbies {
+    padding: 20px;
+    margin-bottom: 50px;
+
+    h5 {
+      margin: 0 0 5px 0;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    ion-chip {
+      color: #000;
+      margin: 0 30px 10px 0;
+    }
+  }
+
+  .action-buttons {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+
+    .accept-reject {
+      color: #000;
+      background: #FFBD97;
+      padding: 15px 39px;
+      display: flex;
+      align-items: center;
+    }
+    .reject{
+      border-top-right-radius: 20px;
+      font-size: 1.5rem;
+
+    }
+
+    .accept{
+      border-top-left-radius: 20px;
+      font-size: 1.5rem;
+
+    }
+  }
+}
