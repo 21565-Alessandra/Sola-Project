@@ -1,7 +1,7 @@
 <ion-header class="ion-no-border" mode="ios">
-  <ion-toolbar >
+  <ion-toolbar>
     <ion-buttons slot="end">
-      <ion-menu-button > </ion-menu-button>
+      <ion-menu-button> </ion-menu-button>
     </ion-buttons>
     <ion-title>Chat</ion-title>
     <ion-icon name="camera-outline" slot="start" size="large"></ion-icon>
@@ -9,30 +9,149 @@
 </ion-header>
 
 <ion-content>
-<div class="tabs ion-padding">
-  <ion-segment value="chats" (ionChange)="segmentChange($event)">
-    <ion-segment-button value="chats">
-      <ion-label>Chats</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="status">
-      <ion-label>Status</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="saved">
-      <ion-label>Saved</ion-label>
-    </ion-segment-button>
-  </ion-segment>
-</div>
-
-<div class="chat-list" *ngIf="activeTab == 'chats'">
-  <div class="recent-chats ion-padding">
-    <div class="heading">
-      <h1>Recent Chats</h1>
-      <ion-icon name="search-sharp"> </ion-icon>
-
-    </div>
-
+  <div class="tabs ion-padding">
+    <ion-segment value="chats" (ionChange)="segmentChange($event)">
+      <ion-segment-button value="chats">
+        <ion-label>Chats</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="status">
+        <ion-label>Status</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="saved">
+        <ion-label>Saved</ion-label>
+      </ion-segment-button>
+    </ion-segment>
   </div>
 
-</div>
+  <div class="chat-list" *ngIf="activeTab == 'chats'">
+    <div class="recent-chats ion-padding">
+      <div class="heading">
+        <h1>Recent Chats</h1>
+        <ion-icon name="search-sharp"> </ion-icon>
+      </div>
 
+      <div class="chats">
+        <ion-item lines="none" routerLink="/conversation-page">
+          <ion-avatar slot="start">
+            <img src="http://i.pravatar.cc/301" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Bella</h2>
+            <p>Typing...</p>
+          </ion-label>
+          <div class="info-div">
+            <p>2:13</p>
+          </div>
+        </ion-item>
+
+        <ion-item lines="none" routerLink="/conversation-page">
+          <ion-avatar slot="start">
+            <img src="http://i.pravatar.cc/313" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Skyler</h2>
+            <p>Don't forget your mask...</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge>1</ion-badge>
+            <p>1:53</p>
+          </div>
+        </ion-item>
+
+        <ion-item lines="none" routerLink="/conversation-page">
+          <ion-avatar slot="start">
+            <img src="http://i.pravatar.cc/300" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Vicky</h2>
+            <p>Check your e-mail</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-icon name="checkmark-done-outline"></ion-icon>
+            <p>1:32</p>
+          </div>
+        </ion-item>
+
+        <ion-item lines="none" routerLink="/conversation-page">
+          <ion-avatar slot="start">
+            <img src="http://i.pravatar.cc/320" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Charlie</h2>
+            <p>Ok, Take care!</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge>1</ion-badge>
+            <p>1:00</p>
+          </div>
+        </ion-item>
+      </div>
+    </div>
+
+    <div class="all-chats ion-padding">
+      <div class="heading">
+        <h1>All Chats</h1>
+    </div>
+
+      <div class="chats">
+        <ion-item lines="none" routerLink="/conversation-page">
+          <ion-avatar slot="start">
+            <img src="http://i.pravatar.cc/301" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Bella</h2>
+            <p>Typing...</p>
+          </ion-label>
+          <div class="info-div">
+            <p>2:13</p>
+          </div>
+        </ion-item>
+
+        <ion-item lines="none" routerLink="/conversation-page">
+          <ion-avatar slot="start">
+            <img src="http://i.pravatar.cc/313" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Mommy</h2>
+            <p>Don't forget your mask...</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge>1</ion-badge>
+            <p>1:53</p>
+          </div>
+        </ion-item>
+
+        <ion-item lines="none" routerLink="/conversation-page">
+          <ion-avatar slot="start">
+            <img src="http://i.pravatar.cc/300" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Vicky</h2>
+            <p>Check your e-mail</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-icon name="checkmark-done-outline"></ion-icon>
+            <p>1:32</p>
+          </div>
+        </ion-item>
+
+        <ion-item lines="none" routerLink="/conversation-page">
+          <ion-avatar slot="start">
+            <img src="http://i.pravatar.cc/320" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Charlie</h2>
+            <p>Ok, Take care!</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge>1</ion-badge>
+            <p>1:00</p>
+          </div>
+        </ion-item>
+      </div>
+    </div>
+  </div>
+  <ion-fab-button color="sola-pink">
+    <ion-icon name="chatbubble-ellipses-outline" color="light"></ion-icon>
+  </ion-fab-button>
 </ion-content>

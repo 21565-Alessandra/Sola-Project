@@ -1,6 +1,6 @@
 ion-header{
   ion-toolbar {
-    --background: #ffff67;
+    --background: #FFFF67;
     font-family: Josefin Sans;
     letter-spacing: 2px;
     font-size: 2rem !important;
@@ -16,7 +16,7 @@ ion-header{
 }
 
 ion-content {
-  --background:#ffff67;
+  --background: #FFFF67;
   .tabs{
     margin-top: 20px;
     font-family: Josefin Sans;
@@ -29,10 +29,11 @@ ion-content {
         --padding-bottom: 3px !important;
         --padding-end: 8px !important;
         --padding-top: 3px !important;
-        --background-checked: #565353;
+        --background-checked: #88D2EF;
         --indicator-color: transparent !important;
-        --color: ##565353;
-        --color-checked: #FFBD97;
+        --color: #565353;
+        --color-checked: #565353
+;
         font-weight: bold;
         border-radius: 5px
       }
@@ -40,7 +41,7 @@ ion-content {
   }
 
   .chat-list{
-    background: #fff;
+    background: #FFF;
     margin-top: 5px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -52,12 +53,78 @@ ion-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      color: #FFFF67
       h1{
         font-size: 1.1rem;
         font-weight: bold;
         color: #565353;
       }
+      ion-icon{
+        font-size: 1.5rem;
+      }
+    }
+    .chats{
+      margin-top: 15px;
+      ion-item::part(native){
+        padding: 0;
+      }
+      ion-item{
+        margin-bottom: 15px;
+        ion-avatar{
+          width:100%!important;
+          height: 100%!important;
+          max-width: 51px;
+        }
+        ion-label{
+          h2{
+            font-size: 1rem;
+            font-weight: bolder;
+            color: #565353;
+          }
+          p{
+            margin-top: 6px;
+            font-size: 0.8rem;
+            color: #565353;
+            opacity: 0.5;
+            letter-spacing: 0.5;
+            font-weight: bold;
+          }
+        }
+        .info-div{
+          position: absolute;
+          right: 0;
+          font-size: 0.8rem;
+          color: #565353;
+          font-weight: bolder;
+          text-align: right;
+          p{
+            opacity: 0.5;
+          }
+          ion-icon{
+            font-size: 1.3rem;
+          }
+          ion-badge{
+            font-size: 11px;
+            margin-bottom: 5px;
+            --padding-start: 5px;
+            --padding-end: 5px;
+            --padding-top: 5px;
+            --padding-bottom: 5px;
+            --background: #88D2EF
+          }
+
+        }
+      }
     }
   }
-
+  ion-fab-button{
+    position: fixed;
+    z-index: 111;
+    bottom: 30px;
+    right: 15px;
+    color: #FFBD97;
+    --background: #FFBD97;
+  }
 }
+
+

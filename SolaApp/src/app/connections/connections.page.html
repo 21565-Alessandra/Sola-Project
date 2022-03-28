@@ -1,0 +1,119 @@
+<!-- App top bar -->
+
+<ion-header [translucent]="true" mode="ios">
+  <ion-toolbar color="sola-yellow">
+    <ion-buttons slot="end">
+      <ion-menu-button> </ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Connection
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-content>
+    <div class="heading">
+      <h3>Connect to other</h3>
+      <h3><span>TRAVELLERS</span></h3>
+    </div>
+
+    <!-- ******************* SEARCH BAR ******************* -->
+    <div class="search-bar">
+      <ion-searchbar placeholder="Search" animated="true"></ion-searchbar>
+    </div>
+    <!-- -------------------------------------------------- -->
+
+    <div class="profile-cards">
+      <ion-card routerLink="/view-profile">
+        <div class="like-info">
+          <ion-icon name="heart-outline"></ion-icon>
+          2.5k
+        </div>
+        <img src="/assets/trav3.png" alt="">
+        <div class="user-info">
+          <p>Olivia - 2km </p>
+          <p>
+            <ion-icon name="flag"></ion-icon>
+            From London
+          </p>
+        </div>
+      </ion-card>
+
+      <ion-card routerLink="/view-profile">
+        <div class="like-info">
+          <ion-icon name="heart-outline"></ion-icon>
+          1.3k
+        </div>
+        <img src="/assets/trav4.png" alt="">
+        <div class="user-info">
+          <p>Anne - 4km</p>
+          <p>
+            <ion-icon name="flag"></ion-icon>
+            From California
+          </p>
+        </div>
+      </ion-card>
+
+      <ion-card routerLink="/view-profile">
+        <div class="like-info">
+          <ion-icon name="heart-outline"></ion-icon>
+          2.3
+        </div>
+        <img src="/assets/trav5.png" alt="">
+        <div class="user-info">
+          <p>Amahle - 4km </p>
+          <p>
+            <ion-icon name="flag"></ion-icon>
+            From Cape Town
+          </p>
+        </div>
+      </ion-card>
+
+      <ion-card routerLink="/view-profile">
+        <div class="like-info">
+          <ion-icon name="heart-outline"></ion-icon>
+          800k
+        </div>
+        <img src="/assets/trav2.png" alt="">
+        <div class="user-info">
+          <p>Sophie - 6km</p>
+          <p>
+            <ion-icon name="flag"></ion-icon>
+            From Dublin
+          </p>
+        </div>
+      </ion-card>
+
+      <ion-card routerLink="/view-profile">
+        <div class="like-info">
+          <ion-icon name="heart-outline"></ion-icon>
+          2.1k
+        </div>
+        <img src="/assets/trav1.png" alt="">
+        <div class="user-info">
+          <p>Jane - 13km</p>
+          <p>
+            <ion-icon name="flag"></ion-icon>
+            From Berlin
+          </p>
+        </div>
+      </ion-card>
+    </div>
+
+    <div class="story-section">
+      <div id="divider"><p></p></div>
+      <h3>Story For You</h3>
+
+      <div class="stories">
+        <div class="story" *ngFor="let story of [].constructor(10);let i = index">
+          <ion-avatar>
+            <i class="fi-rr-plus-small" *ngIf="i == 0"></i>
+            <img src="https://i.pravatar.cc/{{(i+10)*10}}" alt="">
+          </ion-avatar>
+          <p> User {{i+1}} </p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
