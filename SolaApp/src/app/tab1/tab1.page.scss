@@ -9,10 +9,10 @@ img {
 }
 
 .grid-one {
-  padding-top: 20px;
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-bottom: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
   display: flex;
 
 
@@ -20,8 +20,8 @@ img {
     color: white;
 
     .item-one {
-      width: 120px;
-      height: 100px;
+      width: 100px;
+      height: 85px;
       border-top-left-radius: 70px;
       background-color: #88D2EF;
       flex-direction: column;
@@ -31,13 +31,13 @@ img {
 
       ion-icon {
         color: #565353;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
       }
 
       ion-label {
         color: #565353;
-        font-size: 1rem;
-        padding: 4px;
+        font-size: 0.8rem;
+        padding: 1px;
       }
 
     }
@@ -47,8 +47,8 @@ img {
     color: white;
 
     .item-two {
-      width: 120px;
-      height: 100px;
+      width: 100px;
+      height: 85px;
       border-top-right-radius: 70px;
       background-color: #FFFF67;
       flex-direction: column;
@@ -58,13 +58,13 @@ img {
 
       ion-icon {
         color: #565353;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
       }
 
       ion-label {
         color: #565353;
-        font-size: 1rem;
-        padding: 4px;
+        font-size: 0.8rem;
+        padding: 1px;
       }
     }
   }
@@ -72,17 +72,18 @@ img {
 
 
 .grid-two {
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 8px;
   display: flex;
-  justify-content: space-between;
 
   ion-item {
     color: white;
+    margin-left: 1px;
   .item-three {
-    width: 115px;
-    height: 100px;
+    width: 100px;
+    height: 85px;
     border-bottom-left-radius: 70px;
     background-color: #FFBD97;
     flex-direction: column;
@@ -92,13 +93,13 @@ img {
 
     ion-icon {
       color: #565353;
-      font-size: 2.7rem;
+      font-size: 1.8rem;
     }
 
     ion-label {
       color: #565353;
-      font-size: 1rem;
-      padding: 4px;
+      font-size: 0.8rem;
+      padding: 1px;
     }
   }
 }
@@ -106,8 +107,8 @@ img {
 ion-item {
   color: white;
   .item-four {
-    width: 115px;
-    height: 100px;
+    width: 100px;
+    height: 85px;
     border-bottom-right-radius: 70px;
     background-color: #CBAFED;
     flex-direction: column;
@@ -117,13 +118,13 @@ ion-item {
 
     ion-icon {
       color: #565353;
-      font-size: 2.7rem;
+      font-size: 1.8rem;
     }
 
     ion-label {
       color: #565353;
-      font-size: 1rem;
-      padding: 4px;
+      font-size: 0.8rem;
+      padding: 1px;
     }
   }
 }
